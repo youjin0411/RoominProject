@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home"
+        android:title="홈" />
+
+    <item
+        android:id="@+id/navigation_roomin"
+        android:icon="@drawable/roomin"
+        android:title="루민" />
+
+    <item
+        android:id="@+id/navigation_service"
+        android:icon="@drawable/service"
+        android:title="서비스" />
+
+    <item
+        android:id="@+id/navigation_mypage"
+        android:icon="@drawable/mypage"
+        android:title="My" />
+</menu>
