@@ -7,90 +7,72 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ScrollView
+    <FrameLayout
+        android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp">
 
-        <FrameLayout
-            android:id="@+id/fragment_container"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="75dp"
+            android:fontFamily="@font/gmarketsansbold"
+            android:text="모든 서비스"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="0dp">
+            android:layout_marginTop="120dp"
+            android:orientation="horizontal">
 
-            <!--            <ImageView-->
-            <!--                android:id="@+id/my_image_view"-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:src="@drawable/logoname"-->
-            <!--                android:scaleType="centerCrop"-->
-            <!--                android:adjustViewBounds="true"-->
-            <!--                tools:ignore="ContentDescription" />-->
-
-            <!--            <ImageView-->
-            <!--                android:id="@+id/my_image_view"-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:src="@drawable/logoname"-->
-            <!--                android:scaleType="centerCrop"-->
-            <!--                android:adjustViewBounds="true"-->
-            <!--                tools:ignore="ContentDescription" />-->
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="75dp"
-                android:fontFamily="@font/gmarketsansbold"
-                android:text="모든 서비스"
-                android:textColor="#000000"
-                android:textSize="24sp" />
-
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="120dp"
-                android:orientation="horizontal">
+                android:layout_margin="16dp"
+                android:backgroundTint="#F1E4E6"
+                app:cardCornerRadius="18dp">
 
-                <androidx.cardview.widget.CardView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    app:cardCornerRadius="18dp"
-                    android:backgroundTint="#F1E4E6">
+                    android:padding="10dp"
+                    android:backgroundTint="#F1E4E6"
+                    android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:backgroundTint="#F1E4E6"
-                        android:layout_width="match_parent"
-                        android:layout_height="62dp"
-                        android:orientation="horizontal"
-                        android:padding="2dp">
+                    <ImageView
+                        android:id="@+id/image_view"
+                        android:layout_width="39dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="15dp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/call" />
 
-                        <!--                        <ImageView-->
-                        <!--                            android:layout_width="37dp"-->
-                        <!--                            android:layout_height="35dp"-->
-                        <!--                            android:contentDescription="call"-->
-                        <!--                            android:src="@drawable/call" />-->
+                    <TextView
+                        android:layout_width="81dp"
+                        android:layout_height="53dp"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/gmarketsansmedium"
+                        android:text="모닝콜"
+                        android:textColor="#777777"
+                        android:textSize="22sp" />
 
-                        <TextView
-                            android:layout_width="117dp"
-                            android:layout_height="53dp"
-                            android:fontFamily="@font/gmarketsansmedium"
-                            android:text="모닝콜"
-                            android:textSize="20sp" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/round_button"
+                        android:backgroundTint="#FBFBFB"
+                        android:fontFamily="@font/gmarketsansmedium"
+                        android:text="요청중"
+                        android:textColor="#F28FA1"
+                        android:textSize="18sp" />
 
-                        <Button
-                            android:background="@drawable/round_button"
-                            android:layout_width="wrap_content"
-                            android:layout_height="62dp"
-                            android:textColor="#F28FA1"
-                            android:text="요청중"
-                            android:textSize="18sp"
-                            android:fontFamily="@font/gmarketsansmedium"
-                            android:backgroundTint="#FBFBFB"/>
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-            </LinearLayout>
-        </FrameLayout>
-    </ScrollView>
-    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
