@@ -247,6 +247,7 @@
                             <TextView
                                 android:layout_width="69dp"
                                 android:layout_height="18dp"
+                                android:layout_marginLeft="16dp"
                                 android:layout_gravity="center"
                                 android:fontFamily="@font/gmarketsansmedium"
                                 android:text="차/커피"
@@ -325,6 +326,7 @@
                                 android:layout_gravity="center"
                                 android:fontFamily="@font/gmarketsansmedium"
                                 android:text="우산대여"
+                                android:layout_marginLeft="16dp"
                                 android:textSize="16sp" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
